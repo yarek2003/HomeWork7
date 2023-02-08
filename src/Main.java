@@ -8,6 +8,8 @@ public class Main {
         task6();
         task7();
         task8();
+        task4add();
+        task5add();
     }
     public static void task1 () {
         System.out.println();
@@ -116,4 +118,31 @@ public class Main {
         }
 
     }
+    public static void task4add() {
+        System.out.println();
+        System.out.println("Задача №4 Дополнительная");
+        for  (int i=1; i <= 30; i++) {
+            if (i%3 != 0 && i%5 != 0) System.out.println(i + ":");
+            if (i%3 == 0 && i%5 != 0) System.out.println(i + ":ping");
+            if (i%5 == 0 && i%3 != 0) System.out.println(i + ":pong");
+            if (i%3 == 0 && i%5 == 0) System.out.println(i + ":ping pong");
+        }
+    }
+    public static void task5add() {
+        System.out.println();
+        System.out.println("Задача №5 Дополнительная");
+        int first = 0;
+        int second = 1;
+        int temp;
+        System.out.println(first);
+        System.out.println(second);
+         for (int i=1; i <=8;i++) {
+            temp = second;
+            second = second + first;
+            first = temp;
+            System.out.println(second);
+        }
+
+    }
+
 }
