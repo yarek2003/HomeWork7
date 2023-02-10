@@ -53,11 +53,11 @@ public class Main {
     public static void task4 () {
         System.out.println();
         System.out.println("Задача №4");
-    int total = 15000;
+    float total = 15000;
     int contribution = 15000;
     int count=0;
     while (total < 12000000) {
-        total = total + total / 100*7/12 + contribution;
+        total = total + total / 100*7 + contribution;
         count++;
         System.out.println("Месяц " + count + " на счету:" + total + " рублей");
     }
@@ -66,11 +66,11 @@ public class Main {
     public static void task5 () {
         System.out.println();
         System.out.println("Задача №5");
-        int total = 15000;
+        float total = 15000;
         int contribution = 15000;
         int count=0;
         while (total < 12000000) {
-            total = total + total / 100*7/12 + contribution;
+            total = total + total / 100*7 + contribution;
             count++;
             if (count % 6 == 0){
             System.out.println("Месяц " + count + " на счету:" + total + " рублей");}
